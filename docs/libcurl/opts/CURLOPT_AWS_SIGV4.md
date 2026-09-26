@@ -117,9 +117,9 @@ CURLOPT_POSTFIELDS(3). Otherwise, it is the checksum of an empty buffer. For
 requests like PUT, you can provide your own checksum in an HTTP header named
 **x-provider2-content-sha256**.
 
-For **aws:s3**, a **x-amz-content-sha256** header is added to every request if
-not already present. For s3 requests with unknown payload, this header takes
-the special value "UNSIGNED-PAYLOAD".
+For **aws:s3** and **aws:s3express**, a **x-amz-content-sha256** header is
+added to every request if not already present. For s3 and s3express requests
+with unknown payload, this header takes the special value "UNSIGNED-PAYLOAD".
 
 # %AVAILABILITY%
 
